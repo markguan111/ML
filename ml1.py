@@ -51,16 +51,16 @@ expected = target_test
 print(predicted[:20])
 print(expected[:20])
 
-print(format(knn.score(data_test,target_test), ".2%"))
+#print(format(knn.score(data_test,target_test), ".2%"))
 
 wrong = [(p,e)for (p,e) in zip(predicted,expected) if p != e]
-print(wrong)
+#print(wrong)
 
 
 from sklearn.metrics import confusion_matrix
 
 confusion = confusion_matrix(y_true=expected,y_pred=predicted)
-print(confusion)
+#print(confusion)
 
 import pandas as pd
 import seaborn as sns
